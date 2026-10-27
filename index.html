@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Web Developer</title>
+  <meta name="description" content="My personal portfolio, skills, projects, and contact details.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar container">
+      <a href="#home" class="logo">My<span>Portfolio</span></a>
+
+      <button class="menu-btn" id="menu-btn"
+              aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="intro">HELLO, WELCOME TO MY WEBSITE</p>
+
+        <h1>Hi, I'm <span>Siddhi Dattatray Burbure.</span></h1>
+
+        <h2>Aspiring Web Developer</h2>
+
+        <p class="hero-text">
+          I enjoy learning new technologies and building
+          creative, user-friendly websites.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+          <div class="about-icon">👩‍💻</div>
+
+          <div>
+            <h3>Who Am I?</h3>
+            <p>
+              Hello! I'm Siddhi Burbure, a student interested in
+              web development and technology. I enjoy creating
+              websites, solving problems, and improving my
+              programming skills.
+            </p>
+            <p>
+              My goal is to become a skilled developer and
+              build useful, attractive digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">
+          Technologies I am learning and working with.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-symbol">🌐</span>
+            <h3>HTML</h3>
+            <p>Creating website structure</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-symbol">🎨</span>
+            <h3>CSS</h3>
+            <p>Styling and responsive layouts</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-symbol">⚡</span>
+            <h3>JavaScript</h3>
+            <p>Adding interactivity</p>
+          </div>
+
+          <div class="skill-card">
+            <span class="skill-symbol">🐍</span>
+            <h3>Python</h3>
+            <p>Basic programming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">
+          Some projects I have created or plan to build.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3>Personal Portfolio</h3>
+            <p>
+              A responsive website to showcase my introduction,
+              skills, projects, and contact information.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon">✅</div>
+            <h3>To-Do List App</h3>
+            <p>
+              A task management application for adding,
+              completing, and removing daily tasks.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon">✊</div>
+            <h3>Rock Paper Scissors</h3>
+            <p>
+              A simple game where the player competes
+              against the computer.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+          Have a question or project idea? Send me a message.
+        </p>
+
+        <form id="contact-form" class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name"
+                 placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email"
+                 placeholder="Enter your email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5"
+                    placeholder="Write your message here"
+                    required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Siddhi Burbure.
+        Made with HTML, CSS and JavaScript.
+      </p>
+      <a href="#home">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
